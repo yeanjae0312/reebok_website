@@ -1,0 +1,349 @@
+<? include 'header.html' ?>
+    
+    
+    
+    <!-- 섹션영역 -->
+    <section>
+       <h3 class="s_title">비쥬얼</h3>
+        <!-- 비쥬얼 영역 -->
+        <div class="s_inner">
+<!--         <div class="s_inner_bg">-->
+          <div class="visual_img">
+              <img src="./img/visual/visual01(txt).jpg" alt="비쥬얼이미지01">
+              <img src="./img/visual/visual02(txt).jpg" alt="비쥬얼이미지02">
+              <img src="./img/visual/visual03(txt).jpg" alt="비쥬얼이미지03">
+              <img src="./img/visual/visual04.jpg" alt="비쥬얼이미지04">
+          </div>
+          <div class="ctrl_btn">
+              <ul>
+                  <li class="on"></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+              </ul>  
+          </div>
+<!--         </div>-->
+        </div>
+        
+        
+        
+        <!-- 배너영역 -->
+        <article class="article01">
+          <h3 class="b_title">배너</h3>
+           <img src="./img/banner/left_arrow.svg" alt="왼쪽화살표" class="b_arrow_l" onclick="moveLeft()">
+           
+           <img src="./img/banner/right_arrow.svg" alt="오른쪽화살표" class="b_arrow_r" onclick="moveRight()">
+           
+           <div id="banner">
+            <div class="b_001">
+                
+                <div class="b_01">
+                    <img src="./img/banner/banner01.jpg" alt="" class="banner_img">
+                    <img src="./img/banner/banner01_txt.jpg" alt="" class="b_txt">
+                    <br>
+                    <a href=#none title="" class="e_button">자세히 보기</a>
+                </div>
+                
+                <div class="b_02">
+                    <img src="./img/banner/banner02.jpg" alt="" class="banner_img">
+                    <img src="./img/banner/banner02_txt.jpg" alt="" class="b_txt">
+                    <br>
+                    <a href=#none title="" class="e_button">자세히 보기</a>
+                </div>
+                
+            </div>
+            
+            <div class="b_002">
+                
+                <div class="b_03">
+                    <img src="./img/banner/banner03.jpg" alt="" class="banner_img">
+                    <img src="./img/banner/banner03_txt.jpg" alt="" class="b_txt">
+                    <br>
+                    <a href=#none title="" class="e_button">자세히 보기</a>
+                </div>
+                
+                <div class="b_04">
+                    <img src="./img/banner/banner04.jpg" alt="" class="banner_img">
+                    <img src="./img/banner/banner04_txt.jpg" alt="" class="b_txt">
+                    <br>
+                    <a href=#none title="" class="e_button">자세히 보기</a>
+                </div>
+            </div>
+            </div>
+            
+        </article>
+        
+        <script>
+        //배너영역
+        var num = 1;
+        
+        $('.b_002').hide();
+        
+        function moveLeft(){
+            if(num==1){
+                $('.b_00'+num).hide();
+				num=2;
+			}else{//만약에 그렇지 않다면 넘버에 마이너스를 해라
+                $('.b_00'+num).hide();
+				num--;
+			}
+            
+            $('.b_00'+num).show();
+        }
+        
+        function moveRight(){
+            if(num==2){
+                $('.b_00'+num).hide();
+				num=1;
+			}else{//만약에 그렇지 않다면 넘버에 마이너스를 해라
+                $('.b_00'+num).hide();
+				num++; 
+			}
+            
+            $('.b_00'+num).show();
+        }
+    
+    </script>
+      
+      
+    <!--  NEW ITEM영역    -->
+        <article class="article02">
+            <div class="article_bg">
+                <div class="a02_inner">
+                    
+                    <h3>&#35;NEW ITEM</h3>
+                    <ul class="newitem_tag">
+                        <li onclick="shoes()">&#35;shoes</li>
+                        <li onclick="clothes()">&#35;clothes</li>
+                        <li onclick="products()">&#35;products</li>
+                    </ul>
+                    
+                    <div class="shoes_box">
+                        <figure>
+                            <img src="./img/new_item/shoes/shoes01.jpg" alt="신발이미지">
+                            <figcaption>
+                                <p>Unisex Running</p> <br>
+                                리복 로얄 터보 임펄스 클린
+                            </figcaption>
+                        </figure>
+                        
+                        <figure>
+                            <img src="./img/new_item/shoes/shoes02.jpg" alt="신발이미지">
+                            <figcaption>
+                                <p>Unisex Running</p>  <br>
+                                리복 로얄 터보 임펄스 클린
+                            </figcaption>
+                        </figure>
+                        
+                        <figure>
+                            <img src="./img/new_item/shoes/shoes03.jpg" alt="신발이미지">
+                            <figcaption>
+                                <p>Unisex Running</p>  <br>
+                                리복 로얄 터보 임펄스 클린
+                            </figcaption>
+                        </figure>
+                        
+                        
+                    </div>
+                    
+                    
+                    <div class="clothes_box">
+                        <figure>
+                            <img src="./img/new_item/clothes/clothes01.jpg" alt="의류이미지">
+                            <figcaption>
+                                <p>Reebok Classic/Unisex</p> <br>
+                                클래식 UR WB
+                            </figcaption>
+                        </figure>
+                        
+                        <figure>
+                            <img src="./img/new_item/clothes/clothes02.jpg" alt="의류이미지">
+                            <figcaption>
+                                <p>Reebok Classic/Unisex</p>  <br>
+                                클래식 UR WV팬츠
+                            </figcaption>
+                        </figure>
+                        
+                        <figure>
+                            <img src="./img/new_item/clothes/clothes03.jpg" alt="의류이미지">
+                            <figcaption>
+                                <p>Reebok Classic/Unisex</p>  <br>
+                                클래식 F 벡터 레깅스
+                            </figcaption>
+                        </figure>
+                    </div>
+                    
+                    
+                    
+                    <div class="products_box">
+                        <figure>
+                            <img src="./img/new_item/products/products01.jpg" alt="용품이미지">
+                            <figcaption>
+                                <p>Accessories</p> <br>
+                                클래식 FO 백팩
+                            </figcaption>
+                        </figure>
+                        
+                        <figure>
+                            <img src="./img/new_item/products/products02.jpg" alt="용품이미지">
+                            <figcaption>
+                                <p>Accessories</p>  <br>
+                                클래식 로스트 앤 파운드 삭
+                            </figcaption>
+                        </figure>
+                        
+                        <figure>
+                            <img src="./img/new_item/products/products03.jpg" alt="용품이미지">
+                            <figcaption>
+                                <p>Accessories</p>  <br>
+                                클래식 Its 맨 월드 캡
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            
+        </article>
+        
+        <script>
+            
+            $('.clothes_box').hide();
+            $('.products_box').hide();
+            console.log('a');
+            
+            function shoes(){
+                $('.shoes_box').show();
+                $('.clothes_box').hide();
+                $('.products_box').hide();
+                
+                $('.newitem_tag > li:first-child').css('color','#fff');
+                $('.newitem_tag > li:first-child').css('text-decoration','underline');
+                
+                $('.newitem_tag > li:nth-child(2)').css('color','#8e8e8e');
+                $('.newitem_tag > li:nth-child(2)').css('text-decoration','none');
+                
+                $('.newitem_tag > li:nth-child(3)').css('color','#8e8e8e');
+                $('.newitem_tag > li:nth-child(3)').css('text-decoration','none');
+                
+            }
+            
+            function clothes(){
+                $('.clothes_box').show();
+                $('.products_box').hide();
+                $('.shoes_box').hide();
+                
+                $('.newitem_tag > li:first-child').css('color','#8e8e8e');
+                $('.newitem_tag > li:first-child').css('text-decoration','none');
+                
+                $('.newitem_tag > li:nth-child(2)').css('color','#fff');
+                $('.newitem_tag > li:nth-child(2)').css('text-decoration','underline');
+                
+                $('.newitem_tag > li:nth-child(3)').css('color','#8e8e8e');
+                $('.newitem_tag > li:nth-child(3)').css('text-decoration','none');
+                
+            }
+            
+            function products(){
+                $('.products_box').show();
+                $('.clothes_box').hide();
+                $('.shoes_box').hide();
+                
+                $('.newitem_tag > li:first-child').css('color','#8e8e8e');
+                $('.newitem_tag > li:first-child').css('text-decoration','none');
+                
+                $('.newitem_tag > li:nth-child(2)').css('color','#8e8e8e');
+                $('.newitem_tag > li:nth-child(2)').css('text-decoration','none');
+                
+                $('.newitem_tag > li:nth-child(3)').css('color','#fff');
+                $('.newitem_tag > li:nth-child(3)').css('text-decoration','underline');
+                
+                
+            }
+        
+        </script>
+        
+        
+        <article class="article03">
+            <h3>BEST ITEM</h3>
+            <p>최고의 상품을 골라보세요.</p>
+            <ul class="shop_button">
+                <li><a href=#none title="">구매하기</a></li>
+                <li><a href=#none title="">자세히 보기</a></li>
+            </ul>
+            
+            
+            <div class="best_img">
+                <figure>
+                    <a href=#none title=""><img src="./img/best_item/best01.jpg" alt=""></a>
+                    <figcaption>Reebok Pump</figcaption>
+                </figure>
+                
+                <figure>
+                    <a href=#none title=""><img src="./img/best_item/best02.jpg" alt=""></a>
+                    <figcaption>Pump &amp; Boost</figcaption>
+                </figure>
+                
+                <figure>
+                    <a href=#none title=""><img src="./img/best_item/best03.jpg" alt=""></a>
+                    <figcaption>Summer Pack</figcaption>
+                </figure>
+                
+                <figure>
+                    <a href=#none title=""><img src="./img/best_item/best04.jpg" alt=""></a>
+                    <figcaption>Electro 3D LT</figcaption>
+                </figure>
+                
+                <figure>
+                    <a href=#none title=""><img src="./img/best_item/best05.jpg" alt=""></a>
+                    <figcaption>DMX Pert</figcaption>
+                </figure>
+            </div>
+            
+        </article>
+       
+       
+    </section>
+    
+    
+<? include 'footer.html' ?>
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

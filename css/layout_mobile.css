@@ -1,0 +1,434 @@
+@charset "utf-8";
+
+@media screen and (max-width:767px){
+    
+    *{margin: 0px; padding: 0px;}
+    
+    body{
+        font-family: 'Nanum Gothic', sans-serif;
+    }
+    .b_title, .ad_title, .s_title{
+        display: none;
+    }
+    
+    /*헤더-------------------------*/
+    header{
+        width: 100%;
+        height: 80px;
+        background-color: #000;
+/*        position: relative;*/
+        position: fixed;
+        top: 0px;
+        z-index: 3000;
+    }
+    .h_inner{
+        width: 100%;
+        height: 80px;
+        background-color: #000;
+        position: relative;
+    }
+    header .h_btn{
+        width: 30px;
+        height: 30px;
+    }
+    header .logo{
+        width: 150px;
+        position: absolute;
+        top: 25px;
+        left: 25%;
+    }
+    
+    .menu_btn{
+        position: relative;
+        top: 25px;
+        left: 10px;
+    }
+    .search_btn{
+        position: absolute;
+        top: 25px;
+        right: 15%;
+    }
+    .cart_btn{
+        position: absolute;
+        top: 25px;
+        right: 10px;
+    }
+    
+    /*헤더내비*/
+    .close{
+        width: 30px;
+        color: #fff;
+        position: relative;
+        top: 23px;
+        left: 10px;
+        
+    }
+    
+    #nav_wrap{
+/*        display: none;*/
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 80px;
+        background-color: #e3e3e3;
+        z-index: 2000;
+        overflow: scroll;
+    }
+    .gnb{
+        
+    }
+    
+    .gnb_top{
+        width: 100%;
+        height: 150px;
+        margin: 0px auto;
+        text-align: center;
+        background-color: #000;
+        
+    }
+    .gnb_top > li{
+        width: 110px;
+        
+        display: inline-block;
+        background-color: #fff;
+        border-radius: 20px;
+        padding: 15px 10px;
+        margin: 10px 10px;
+    }
+    .gnb_top > li > a{
+        display: block;
+        font-weight: bold;
+        font-size: 14px;
+    }
+    
+    .gnb_bottom{
+        width: 80%;
+        margin: 0px auto 40px auto;
+        text-align: center;
+        background-color: #fff;
+        border-radius: 20px;
+        transform: translateY(-60px);
+    }
+    .gnb_menu{}
+    .gnb_menu > li{
+        line-height: 60px;
+    }
+    .gnb_menu > li > a{
+        display: block;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    
+    .sub_wrap{
+    }
+    .sub_wrap > ul{}
+    .sub_wrap > ul > li{
+        line-height: 35px;
+    }
+    .sub_wrap > ul > li > a{
+        display: block;
+        font-size: 14px;
+    }
+    
+    
+    .gnb_table{
+        width: 60%;
+        margin: 0px auto 50px auto;
+        text-align: center;
+/*        background-color: #fff;*/
+        transform: translateY(-60px);
+        box-sizing: border-box;
+    }
+    .gnb_table > ul{
+        display: block;
+        border: 1px solid #b7b7b7;
+        overflow: hidden;
+        box-sizing: border-box;
+        border-radius: 10px;
+    }
+    .gnb_table > ul > li{
+        width: 50%;
+        float: left;
+/*        display: block;*/
+        background-color: #fff;
+        padding: 10px 0px;
+        box-sizing: border-box;
+    }
+    .gnb_table > ul > li:first-child, .gnb_table > ul > li:nth-child(2){
+        border-bottom: 1px solid #b7b7b7;
+    }
+    .gnb_table > ul > li:first-child, .gnb_table > ul > li:nth-child(3){
+        border-right: 1px solid #b7b7b7;
+    }
+    
+    .gnb_table > ul > li > a{
+        display: block;
+        font-size: 14px;
+    }
+    
+    .gnb_table > ul::after{
+        clear: both;
+        content: "";
+        display: block;
+    }
+    
+    .act01{
+        color: #981b22;
+    }
+    
+    
+    
+    /*섹션------------------------*/
+    section{
+        width: 100%;
+        transform: translateY(80px);
+    }
+    
+    
+    /*배너*/
+    .banner{
+        margin: 0px 0px 50px 0px;
+    }
+    .banner_box{
+        margin: 0px 30px 0px 30px;
+    }
+    .b_01, .b_02, .b_03, .b_04{
+        width: 280px;
+        height: 400px;
+        border-radius: 35px;
+        overflow: hidden;
+        box-shadow: 3px 3px 5px #ccc;
+/*        margin: 0px 20px;*/
+    }
+    .last_banner{
+        
+    }
+    
+    .b_01 > img:first-of-type,.b_02 > img:first-of-type,.b_03 > img:first-of-type,.b_04 > img:first-of-type{
+        width: 450px;
+        transform: translateX(-65px);
+    }
+    
+    .b_01 > img:nth-of-type(2), .b_02 > img:nth-of-type(2), .b_03 > img:nth-of-type(2), .b_04 > img:nth-of-type(2){
+        width: 200px;
+        transform: translateX(35px);
+    }
+    .banner .b_02 > img:first-of-type{
+/*        width: 300px;*/
+        transform: translateX(0px);
+    }
+    
+    .b_01 > a, .b_02 > a, .b_03 > a, .b_04 > a{
+        width: 80px;
+        margin: 0px auto;
+        text-align:center;
+        font-size: 14px;
+        display: block;
+        background-color: #000;
+        color: #fff;
+        padding: 12px;
+        border-radius: 10px;
+        transform: translateY(9px);
+    }
+   
+    
+    
+    /*뉴아이템*/
+    .new_item{
+        width: 360px;
+        margin: 20px auto 30px auto;
+        text-align: center;
+    }
+    .new_item > h3{
+        text-align: center;
+        font-size: 20px;
+/*        margin-bottom: 20px;*/
+        font-weight: bold;
+    }
+    .new_item .new_item_box{
+        width: 160px;
+        height: 300px;
+        margin: 30px auto 0px auto;
+/*        background-color: #a06565;*/
+    }
+    .new_item .new_item_box > img{
+        width: 150px;
+        margin-top: 5px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 3px #969696;
+    }
+    .new_item .new_item_box > p:first-of-type{
+        font-size: 12px;
+        color: #969696;
+        margin: 10px 0px;
+    }
+    .new_item .new_item_box > p:last-of-type{
+        font-size: 12px;
+    }
+    
+    
+    /*광고*/
+    .ad img{
+        width: 100%;
+        margin: 30px 0px;
+    }
+    
+    /*베스트아이템*/
+    .best_item{
+        margin: 50px 0px;
+    }
+    
+    .bestitem_box{
+    }
+    .best_item > h3{
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .best_item_box{
+/*        width: 300px;*/
+        margin-top: 35px;
+        text-align: center;
+    }
+    .best_item_box img{
+/*        width: 300px;*/
+        width: 100%;
+    }
+    .best_item_box p{
+        margin: 10px 0px;
+        font-family: 'Russo One', sans-serif;
+        font-size: 14px;
+    }
+    .swiper-slide3{
+    }
+    
+    
+    
+    /*푸터-------------------------*/
+    aside{
+        text-align: center;
+        transform: translateY(80px);
+    }
+    aside img{
+        width: 25px;
+    }
+    aside p{
+        font-size: 12px;
+        font-weight: bold;
+    }
+    
+    
+    footer{
+        width: 100%;
+        background-color: #000;
+        text-align: center;
+        transform: translateY(80px);
+    }
+    
+    .f_gnb{
+        width: 100%;
+        height: 50px;
+    }
+    .f_gnb > li{
+        display: inline-block;
+        line-height: 50px;
+        padding: 0px 10px;
+    }
+    .f_gnb > li > a{
+        display: block;
+        color: #fff;
+        font-size: 12px;
+    }
+    .f_ad_img{
+        width: 100%;
+    }
+    
+    .f_sns{
+        height: 50px;
+    }
+    .f_sns > li{
+        display: inline-block;
+        padding: 0px 24px;
+        line-height: 50px;
+    }
+    .f_sns > li > a{
+        display: block;
+    }
+    .f_sns > li > a > img{
+        width: 20px;
+    }
+    
+    .com_info{
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .com_info > h3{
+        color: #fff;
+    }
+    .com_info p{
+        color: #676767;
+    }
+    
+    .f_lnb01{
+        margin: 15px 0px;
+    }
+    .f_lnb01 > li{
+        display: inline-block;
+        padding: 0px 10px;
+        border-right: 1px solid #fff;
+    }
+    .f_lnb01 > li:last-child{
+        border: none;
+    }
+    .f_lnb01 > li > a{
+        display: block;
+        color: #fff;
+        font-size: 12px;
+    }
+    
+    .f_lnb02{
+        margin: 15px 0px;
+    }
+    .f_lnb02 > li{
+        display: inline-block;
+        padding: 0px 10px;
+        border-right: 1px solid #676767;
+    }
+    .f_lnb02 > li:last-child{
+        border: none;
+    }
+    .f_lnb02 > li > a{
+        display: block;
+        color: #676767;
+        font-size: 12px;
+    }
+    
+    .f_copyright{
+        color: #676767;
+        font-size: 12px;
+        padding-bottom: 10px;
+    }
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

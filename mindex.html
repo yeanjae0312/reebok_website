@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-sclae=1">
+    <meta http-equiv="x-UA-Compatible" content="IE=edge">
+    
+    <link href="./css/layout_mobile.css" rel="stylesheet" type="text/css">
+    <link href="./css/base.css" rel="stylesheet" type="text/css">
+    <link href="./css/reset.css" rel="stylesheet" type="text/css">
+    <!-- 플렉스슬라이더 -->
+    <link href="./css/flexslider.css" rel="stylesheet" type="text/css">
+    
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="./css/swiper.css">
+    
+    <!-- 나눔고딕 구글 웹폰트 -->
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    
+    <!-- Russo One 구글 웹폰트 -->
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+   
+    
+    
+    <!-- 제이쿼리 라이브러리 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
+    <!-- 플렉스슬라이더.js -->
+    <script src="./script/jquery.flexslider.js"></script>
+    
+    <!-- Swiper JS -->
+    <script src="./script/swiper.min.js"></script>
+    
+    <!-- css3속성 사용시 접두사 생략해도 되는 소스 -->
+    <script src="./script/prefixfree.min.js"></script>
+    
+    <!-- 아이콘폰트 -->
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    
+    <title>Reebok mobile</title>
+    
+    <script>
+        
+        $(window).ready(function(){
+            
+            //top버튼 클릭시 자연스럽게 상단으로 올라가기
+            $('aside a').click(function() {  
+                $('html, body').animate({
+                    scrollTop: '0px'
+                }, 300);
+                return false; //새로고침이 안되게 해준다.
+            });
+            
+        });
+        
+    </script>
+    
+    
+    
+</head>
+<body>
+   
+   <!-- 헤더 -->
+   <header>
+     
+      
+      
+      <div class="h_inner">
+       <img src="./img/01mobile_img/header/menu_bar.svg" alt="메뉴버튼" class="h_btn menu_btn" onclick="toggle_button()">
+       
+       <img src="./img/01mobile_img/header/close_btn.svg" alt="닫기이미지" class="close" onclick="close_button()">
+       
+       <a href="mindex.html" title=""><img src="./img/01mobile_img/header/white_logo.png" alt="로고" class="logo"></a>
+       
+       <img src="./img/01mobile_img/header/search.svg" alt="검색" class="h_btn search_btn">
+       
+       <a href=#none title="장바구니"><img src="./img/01mobile_img/header/cart.svg" alt="장바구니" class="h_btn cart_btn"></a>
+       </div>
+      
+      
+      <!-- 헤더내비게이션 -->
+      <div id="nav_wrap">
+       <nav class="gnb">
+           
+                   <ul class="gnb_top">
+                       <li><a href=#none title="로그인">로그인/회원가입</a></li>
+                       <li><a href=#none title="회원가입">마이페이지</a></li>
+                   </ul>
+                   
+                   
+                   <div class="gnb_bottom">
+                    <ul class="gnb_menu">
+                        <li>
+                            <a href=#none title="men" class="men">MEN</a>
+                            <nav class="sub_wrap">
+                                <ul>
+                                    <li><a href=#none title="신상품">신상품</a></li>
+                                    <li><a href=#none title="인기상품">인기상품</a></li>
+                                    <li><a href=#none title="할인상품">할인상품</a></li>
+                                    <li><a href=#none title="신발">신발</a></li>
+                                    <li><a href=#none title="의류">의류</a></li>
+                                    <li><a href=#none title="용품">용품</a></li>
+                                </ul>
+                            </nav>
+                        </li>
+                        <li>
+                            <a href=#none title="WOMEN" class="women">WOMEN</a>
+                            <nav class="sub_wrap">
+                                <ul>
+                                    <li><a href=#none title="신상품">신상품</a></li>
+                                    <li><a href=#none title="인기상품">인기상품</a></li>
+                                    <li><a href=#none title="할인상품">할인상품</a></li>
+                                    <li><a href=#none title="신발">신발</a></li>
+                                    <li><a href=#none title="의류">의류</a></li>
+                                    <li><a href=#none title="용품">용품</a></li>
+                                </ul>
+                            </nav>
+                        </li>
+                        <li>
+                            <a href=#none title="KIDS" class="kids">KIDS</a>
+                            <nav class="sub_wrap">
+                                <ul>
+                                    <li><a href=#none title="신상품">신상품</a></li>
+                                    <li><a href=#none title="인기상품">인기상품</a></li>
+                                    <li><a href=#none title="할인상품">할인상품</a></li>
+                                    <li><a href=#none title="신발">신발</a></li>
+                                    <li><a href=#none title="의류">의류</a></li>
+                                    <li><a href=#none title="용품">용품</a></li>
+                                </ul>
+                            </nav>
+                        </li>
+                        <li>
+                            <a href=#none title="FITNESS" class="fitness">FITNESS</a>
+                            <nav class="sub_wrap">
+                                <ul>
+                                    <li><a href=#none title="트레이닝">트레이닝</a></li>
+                                    <li><a href=#none title="러닝">러닝</a></li>
+                                    <li><a href=#none title="아웃도어">아웃도어</a></li>
+                                    <li><a href=#none title="기타">기타</a></li>
+                                </ul>
+                            </nav>
+                        </li>
+                        <li>
+                            <a href=#none title="ONLINE" class="onlineonly">ONLINE ONLY</a>
+                            <nav class="sub_wrap">
+                                <ul>
+                                    <li><a href=#none title="none"></a></li>
+                                </ul>
+                            </nav>
+                        </li>
+                        <li>
+                            <a href=#none title="BRAND" class="brand">BRAND</a>
+                            <nav class="sub_wrap">
+                                <ul>
+                                    <li><a href=#none title="FITNESS">FITNESS</a></li>
+                                    <li><a href=#none title="CLASSIC">CLASSIC</a></li>
+                                    <li><a href=#none title="CAMPAINGS">CAMPAINGS</a></li>
+                                    <li><a href=#none title="REECLUB">REECLUB</a></li>
+                                    <li><a href=#none title="PROMOTION">PROMOTION</a></li>
+                                </ul>
+                            </nav>
+                        </li>
+                    </ul>
+                  </div>
+                  
+                     <div class="gnb_table">
+                       <ul>
+                           <li><a href=#none title="신상품">신상품 ></a></li>
+                           <li><a href=#none title="할인상품">할인상품 ></a></li>
+                           <li><a href=#none title="인기상품">인기상품 ></a></li>
+                           <li><a href=#none title="공식아울렛">공식아울렛 ></a></li>
+                       </ul>
+                     </div>
+                
+                </nav>
+                
+                
+                
+             </div>
+             
+      
+      
+       
+       
+       <script>
+           $('.close').hide();
+           $('#nav_wrap').css({
+               position:'fixed',
+               left:'-100%',
+               transition:'0.5s'
+           });
+           
+           function toggle_button(){
+               $('.menu_btn').hide();
+               $('.close').show();
+//               $('#nav_wrap').slideDown();
+               $('#nav_wrap').css({
+                   left:'0px'
+               });
+               
+           }
+           
+           function close_button(){
+               $('.menu_btn').show();
+               $('.close').hide();
+//               $('#nav_wrap').slideDown();
+               $('#nav_wrap').css({
+                   left:'-100%'
+               });
+           }
+           
+           $('.sub_wrap').hide();
+           
+           $('.gnb_menu > li > a').click(function(){
+               $(this).next().slideToggle(300);
+               $(this).toggleClass('act01');
+           });
+           
+       </script>
+       
+       
+   </header>
+    
+    
+    <!-- 섹션 -->
+    <section>
+       <h2 class="s_title">section</h2>
+        
+        <!-- 메인슬라이드 -->
+        <div class="flexslider">
+            <ul class="slides">
+                <li>
+                    <img src="./img/01mobile_img/visual/visual01.jpg" alt="이벤트이미지1">
+                </li>
+                <li>
+                    <img src="./img/01mobile_img/visual/visual02.jpg" alt="이벤트이미지2">
+                </li>
+                <li>
+                    <img src="./img/01mobile_img/visual/visual03.jpg" alt="이벤트이미지3">
+                </li>
+                
+            </ul>
+        </div>
+        
+        
+        <article class="banner">
+           <h3 class="b_title">banner</h3>
+            
+        <!-- Swiper 240 -->
+          <div class="swiper-container1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide banner_box">
+                  <div class="b_01">
+                        <img src="./img/01mobile_img/banner/banner01.jpg" alt="배너1">
+
+                        <img src="./img/01mobile_img/banner/banner01_txt.jpg" alt="배너1 텍스트">
+
+                        <a href=#none title="">자세히 보기</a>
+                    </div>
+              </div>
+
+              <div class="swiper-slide banner_box">
+                  <div class="b_02">
+                        <img src="./img/01mobile_img/banner/banner02.jpg" alt="배너1">
+
+                        <img src="./img/01mobile_img/banner/banner02_txt.jpg" alt="배너2 텍스트">
+
+                        <a href=#none title="">자세히 보기</a>
+                    </div>
+              </div>
+
+              <div class="swiper-slide banner_box">
+                  <div class="b_03">
+                        <img src="./img/01mobile_img/banner/banner03.jpg" alt="배너1">
+
+                        <img src="./img/01mobile_img/banner/banner03_txt.jpg" alt="배너3 텍스트">
+
+                        <a href=#none title="">자세히 보기</a>
+                    </div>
+              </div>
+
+              <div class="swiper-slide banner_box last_banner">
+                  <div class="b_04">
+                        <img src="./img/01mobile_img/banner/banner04.jpg" alt="배너1">
+
+                        <img src="./img/01mobile_img/banner/banner04_txt.jpg" alt="배너4 텍스트">
+
+                        <a href=#none title="">자세히 보기</a>
+                    </div>
+              </div>
+            </div>
+            
+             <!-- Add Pagination -->
+    <div class="swiper-pagination banner_pagi"></div>
+          </div>
+           
+           <!-- banner Initialize Swiper -->
+      <script>
+        var swiper = new Swiper('.swiper-container1', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 100,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows : false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+          
+      </script>
+            
+       </article>
+        
+        
+      <article class="new_item">
+           <h3>#NEW ITEM</h3>
+        <!--new item Swiper 210 -->
+          <div class="swiper-container2">
+            <div class="swiper-wrapper">
+             
+              <div class="swiper-slide">
+                  <div class="new_item_box">
+                      <img src="./img/01mobile_img/new_item/shoes/shoes01.jpg" alt="신발1">
+                      <p>Unisex Running</p>
+                      <p>리복 로얄 터보 임펄스 클린</p>
+                  </div>
+              </div>
+              
+              <div class="swiper-slide">
+                  <div class="new_item_box">
+                      <img src="./img/01mobile_img/new_item/shoes/shoes02.jpg" alt="신발2">
+                      <p>Unisex Running</p>
+                      <p>리복 로얄 터보 임펄스 클린</p>
+                  </div>
+              </div>
+              
+              <div class="swiper-slide">
+                  <div class="new_item_box">
+                      <img src="./img/01mobile_img/new_item/clothes/clothes01.jpg" alt="상의1">
+                      <p>Reebok Classic/Unisex</p>
+                      <p>클래식 UR WB</p>
+                  </div>
+              </div>
+              
+              <div class="swiper-slide">
+                  <div class="new_item_box">
+                      <img src="./img/01mobile_img/new_item/clothes/clothes03.jpg" alt="상의2">
+                      <p>Reebok Classic/Unisex</p>
+                      <p>클래식 F 벡터 레깅스</p>
+                  </div>
+              </div>
+              
+              <div class="swiper-slide">
+                  <div class="new_item_box">
+                      <img src="./img/01mobile_img/new_item/products/products01.jpg" alt="용품1">
+                      <p>Accessories</p>
+                      <p>클래식 FO 백팩</p>
+                  </div>
+              </div>
+              
+              <div class="swiper-slide">
+                  <div class="new_item_box">
+                      <img src="./img/01mobile_img/new_item/products/products03.jpg" alt="용품2">
+                      <p>Accessories</p>
+                      <p>클래식 Its 맨 월드 캡</p>
+                  </div>
+              </div>
+
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            
+          </div>
+           
+          <!-- new item Initialize Swiper -->
+          <script>
+            var swiper = new Swiper('.swiper-container2', {
+              slidesPerView: 2,
+              spaceBetween: 30,
+              slidesPerGroup: 2,
+              loop: true,
+              loopFillGroupWithBlank: true,
+              pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+              },
+              
+            });
+          </script>
+            
+      </article>
+          
+          
+      <article class="ad">
+         <h3 class="ad_title">ad</h3>
+          <a href=#none title="광고이미지"><img src="./img/01mobile_img/advertisement/advertisement.jpg" alt="광고이미지"></a>
+      </article>
+       
+       
+      <article class="best_item">
+         <h3>BEST ITEM</h3>
+          <!--best_item Swiper 150 -->
+          <div class="swiper-container3">
+            <div class="swiper-wrapper bestitem_box">
+             
+              <div class="swiper-slide swiper-slide3">
+                 <div class="best_item_box">
+                  <a href=#none title=""><img src="./img/01mobile_img/best_item/best04.jpg" alt="베스트아이템이미지">
+                  </a>
+                  <p>ELECTRO 3D LT</p>
+                  </div>
+              </div>
+              
+              <div class="swiper-slide swiper-slide3">
+                  <div class="best_item_box">
+                   <a href=#none title=""><img src="./img/01mobile_img/best_item/best01.jpg" alt="베스트아이템이미지">
+                  </a>
+                  <p>TOM and JERRY</p>
+                  </div>
+              </div>
+              
+              <div class="swiper-slide swiper-slide3">
+                 <div class="best_item_box">
+                  <a href=#none title=""><img src="./img/01mobile_img/best_item/best02.jpg" alt="베스트아이템이미지">
+                  </a>
+                  <p>PUMP &amp; BOOST</p>
+                  </div>
+              </div>
+              
+              <div class="swiper-slide swiper-slide3">
+                 <div class="best_item_box">
+                  <a href=#none title=""><img src="./img/01mobile_img/best_item/best03.jpg" alt="베스트아이템이미지">
+                  </a>
+                  <p>SUMMER PACK</p>
+                  </div>
+              </div>
+              
+              <div class="swiper-slide swiper-slide3">
+                 <div class="best_item_box">
+                  <a href=#none title=""><img src="./img/01mobile_img/best_item/best05.jpg" alt="베스트아이템이미지">
+                  </a>
+                  <p>DMX PERT</p>
+                  </div>
+              </div>
+              
+            </div>
+          </div>
+          
+           <script>
+            var swiper = new Swiper('.swiper-container3', {
+              slidesPerView: 1.3,
+              centeredSlides: true,
+              spaceBetween: 30,
+              grabCursor: true,
+            });
+          </script>
+          
+          <!--best_item Initialize Swiper -->
+<!--
+          <script>
+            var swiper = new Swiper('.swiper-container3', {
+              slidesPerView: 1.4,
+              spaceBetween: 14,
+              freeMode: true
+            });
+          </script>
+-->
+      </article>
+       
+        
+ </section>
+    
+    
+    
+    <!-- 푸터 -->
+    
+    <aside>
+        <a href="#top" title="위로바로가기">
+            <img src="./img/01mobile_img/footer/top.svg" alt="위로가기">
+            <p>TOP</p>
+        </a>
+    </aside>
+    
+    
+    
+    <footer>
+        
+        <ul class="f_gnb">
+            <li><a href=#none title="">주문배송</a></li>
+            <li><a href=#none title="">매장안내</a></li>
+            <li><a href=#none title="">고객센터</a></li>
+            <li><a href=#none title="">공지사항</a></li>
+            <li><a href="http://yeanjae0312.dothome.co.kr/reebok_website/index.html?move_pc_screen=1" 
+        title="pc버전보기">PC버전</a></li>
+        </ul>
+        
+        <a href=#none title="광고"><img src="./img/01mobile_img/advertisement/bnn_join%20(1).jpg" alt="광고" class="f_ad_img"></a>
+        
+        <ul class="f_sns">
+            <li><a href=#none title="sns"><img src="./img/01mobile_img/footer/facebook.svg" alt="facebook"></a></li>
+            <li><a href=#none title="sns"><img src="./img/01mobile_img/footer/instagram.svg" alt="instagram"></a></li>
+            <li><a href=#none title="sns"><img src="./img/01mobile_img/footer/youtube.svg" alt="youtube"></a></li>
+            <li><a href=#none title="sns"><img src="./img/01mobile_img/footer/kakaotalk.svg" alt="kakaotalk"></a></li>
+            <li><a href=#none title="sns"><img src="./img/01mobile_img/footer/blog.svg" alt="blog"></a></li>
+        </ul>
+        
+        <div class="com_info">
+            <h3>리복공식온라인스토어 &#124; (아디다스코리아(유))</h3>
+            
+            <p>서울특별시 00구 00대로, 삼성생명 00타워 00층(00000)</p>
+            <p>대표자 : 0 00 00</p>
+            <p>사업자등록번호 : 000-00-00000</p>
+            <p>통신판매업신고번호 : 0000-0000-00000</p>
+            <p>개인정보관리책임자 : 000</p>
+            <p>호스팅서비스사업자 : 아디다스코리아(유)</p>
+            <p>고객센터 : 0000-0000</p>
+            <p>이메일 : aaaa@aaaa.com</p>
+        </div>
+        
+        <ul class="f_lnb01">
+            <li><a href=#none title="">구매이용약관</a></li>
+            <li><a href=#none title="">개인정보처리방침</a></li>
+            <li><a href=#none title="">리클럽이용약관</a></li>
+        </ul>
+        
+         <ul class="f_lnb02">
+            <li><a href=#none title="">사업자정보확인</a></li>
+            <li><a href=#none title="">공정거래자율율준수</a></li>
+            <li><a href=#none title="">채무지급보증안내</a></li>
+        </ul>
+        
+        <p class="f_copyright">&copy;adidasKoreaLLC.All Rights Reserved.</p>
+       
+        
+    </footer>
+    
+    
+    
+    
+    
+    
+    
+    
+    <script>
+   // Can also be used with $(document).ready()
+$(window).load(function() {
+  $('.flexslider').flexslider({
+    animation: "slide"
+  });
+}); 
+   </script>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
